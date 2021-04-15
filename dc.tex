@@ -26,6 +26,8 @@
 %\usepackage{mb}
 %\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 \usepackage{lineno}
+\usepackage[dvipdfmx]{xcolor}
+\newcommand{\graysubsection}[1]{\subsection{\colorbox[gray]{0.85}{#1}}}
 
 % ===== my personal definitions ==================================
 % ここに、自分のよく使う記号などを定義して下さい。
@@ -51,7 +53,6 @@
 % ===== 欄外メモ ==================
 \newcommand{\memo}[1]{\marginpar{#1}}
 %\renewcommand{\memo}[1]{}	% 全てのメモを表示させないようにするには、行頭の"%"を消す
-
 
 %\input{../../sample/simple/contents}	% skip
 \input{pieces/hook5} % pieces
