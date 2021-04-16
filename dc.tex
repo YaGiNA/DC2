@@ -27,7 +27,8 @@
 %\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 \usepackage{lineno}
 \usepackage[dvipdfmx]{xcolor}
-\newcommand{\graysubsection}[1]{\subsection{\colorbox[gray]{0.85}{#1}}}
+\usepackage{url}
+\newcommand{\graysubsection}[1]{\subsection*{\colorbox[gray]{0.85}{#1}}}
 
 % ===== my personal definitions ==================================
 % ここに、自分のよく使う記号などを定義して下さい。
