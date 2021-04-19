@@ -1,5 +1,5 @@
-%\documentclass[11pt,a4paper,uplatex,dvipdfmx]{ujarticle} 		% for uplatex
-\documentclass[11pt,a4j,dvipdfmx]{jarticle} 					% for platex
+\documentclass[11pt,a4paper,uplatex,dvipdfmx]{ujarticle} 		% for uplatex
+%\documentclass[11pt,a4j,dvipdfmx]{jarticle} 					% for platex
 \input{pieces/form00_header} % pieces
 \input{pieces/kakenhi7} % pieces
 \input{pieces/form01_dcpd_header} % pieces
@@ -11,12 +11,12 @@
 %　基本情報
 %
 %------ 研究課題名  -------------------------------------------
-\newcommand{\研究課題名}{象の卵}
+\newcommand{\研究課題名}{深層学習の弱教師あり学習を利用した日本語フェイクニュースの早期自動検出}
 
 %----- 研究機関名と研究代表者の氏名-----------------------
-\newcommand{\研究機関名}{逢坂大学}
-\newcommand{\研究代表者氏名}{湯川秀樹}
-\newcommand{\me}{\underline{\underline{H.~Yukawa}}} 
+\newcommand{\研究機関名}{電気通信大学}
+\newcommand{\研究代表者氏名}{柳　裕太}
+\newcommand{\me}{\underline{\underline{Y.~Yanagi}}} 
 \input{pieces/inst_dcpd} % pieces
 % user07_header
 % ===== my favorite packages ====================================
@@ -26,6 +26,10 @@
 %\usepackage{mb}
 %\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 \usepackage{lineno}
+\usepackage[dvipdfmx]{xcolor}
+\usepackage{url}
+\newcommand{\graysubsection}[1]{\subsection*{\colorbox[gray]{0.85}{#1}}}
+\newcommand{\graybf}[1]{\textbf{\colorbox[gray]{0.85}{#1}}}
 
 % ===== my personal definitions ==================================
 % ここに、自分のよく使う記号などを定義して下さい。
@@ -51,7 +55,6 @@
 % ===== 欄外メモ ==================
 \newcommand{\memo}[1]{\marginpar{#1}}
 %\renewcommand{\memo}[1]{}	% 全てのメモを表示させないようにするには、行頭の"%"を消す
-
 
 %\input{../../sample/simple/contents}	% skip
 \input{pieces/hook5} % pieces
