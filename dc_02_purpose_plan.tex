@@ -18,13 +18,14 @@
 
 \setlength\intextsep{0pt}
 \setlength\textfloatsep{0pt}
-\begin{wrapfigure}{r}[0pt]{0.6\linewidth}
-    \vspace{-5mm}
+\begin{wrapfigure}{r}[0pt]{0.3\linewidth}
+    \vspace{-2\baselineskip}
     \centering
-    \includegraphics[width=0.6\textwidth]{figs/dataset.pdf}
+    \includegraphics[width=0.3\textwidth]{figs/dataset.pdf}
     \vspace{-1cm} 
-    \caption{データセット作成の流れ。ユーザ反応取得は全記事を対象に行う。}
+    \caption{本研究計画の完成予想図。}
     \label{fig:dataset}
+    \vspace{-3\baselineskip}
 \end{wrapfigure}
 
 以下の3目標を目指し研究する。
@@ -59,12 +60,13 @@
 \setlength\intextsep{0pt}
 \setlength\textfloatsep{0pt}
 \begin{wrapfigure}{r}[0pt]{0.8\linewidth}
-    \vspace{-5mm}
+    %\vspace{-2\baselineskip}
     \centering
     \includegraphics[width=0.8\textwidth]{figs/plan.pdf}
     \vspace{-1cm} 
     \caption{研究計画の年毎の流れ。}
     \label{fig:plan}
+    %\vspace{-3\baselineskip}
 \end{wrapfigure}
 ラベル付きユーザの反応を弱いアノテーションとして扱ってフェイクニュースを検出する方法は、
 英文記事を対象にしたKai Shuらの研究で1例が示されている\cite{shu2020leveraging}。
@@ -73,7 +75,12 @@
 今回はこの3種類に加え、他に投稿者のプロフィールや使用された絵文字やハッシュタグといった情報で有用なものがないか模索する。
 
 \sbsbsection{目標Ⅲ: 利用者とのやり取りで検出を行うモデルを開発する(2年目)}
-
+データセットとモデルの構築のみでは、今後のニュース内容の変化に対応することが難しい。
+継続して社会の潮流の変化に対応するためには、データセットと検出方法を工夫する必要がある。
+本研究は、ユーザがモデルに直接真偽を問い合わせるシステムを構築する。
+上記で実装したモデルに対して、ユーザが記事内容を入力し問い合わせることで、真偽判断結果を提供すると共にデータセットへラベルなしニュースの追加を狙う。
+実験ではSNS利用者を対象とした主観評価実験により、フェイクニュース拡散の抑止力の効果を測定する。
+モデル提供が難しい場合は、データセットとモデルを公開することで日本語におけるフェイクニュース早期検出研究の促進を目指す。
 
 %end どのような計画で、何を、どこまで明らかにしようとするのか ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -82,18 +89,20 @@
 \vspace{20pt}
 \sbsbsection{本研究の特色}
 \begin{itemize}
+    \setlength{\parskip}{0cm}
+    \setlength{\itemsep}{0cm}
     \item \underline{日本語}を対象にフェイクニュースの自動検出を行う点。
     \item ファクトチェックの結果を待たず\underline{早期の検出}を目指す点。
-    \item 変化する社会情勢を踏まえ、\underline{特定の記事カテゴリに限らず高精度な検出}を行う点。
+    \item ユーザからの情報提供で\underline{継続してデータセット拡大・モデル改善}を行う点。
 \end{itemize}
 
-\sbsbsection{先行研究との比較}
+\sbsbsection{独創的な点: 先行研究との比較}
 深層学習でフェイクニュースを自動検出する\underline{研究対象は英文に集中}しており、
 \underline{日本語データセットがない}。
 言語に囚われずユーザによる拡散された経緯で真偽を判断する研究もあるが\cite{tarek2020}、
 依然として記事の内容を考慮した研究では日本語を対象としたものがない。
 
-\sbsbsection{予想されるインパクト・将来の見通し}
+\sbsbsection{独創的な点: 予想されるインパクト・将来の見通し}
 総務省によるとSNS利用率は2019年現在69\%を占める上、SNSマーケティング市場規模は2025年に1兆1,171億円まで成長する(出典：サイバー・バズ/デジタルインファクト調べ)と推測されている。
 SNS利用者が拡大を続ける中、本研究の完成によりこれまで活発になされていなかった日本語のフェイクニュースを早期検出するモデルの開発および提供が可能となる。
 SNS利用者への注意喚起に活用ができるほか、ファクトチェックを行う人への補助システムへの活用
