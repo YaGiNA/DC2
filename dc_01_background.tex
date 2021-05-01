@@ -42,15 +42,15 @@ SNSの発展で情報を迅速かつ大量に取得・共有が容易になっ�
     \item[ニュースのタイムリー性] %\mbox{}\\
         ニュースという性質上、時間経過で扱われる情報が徐々に古くなりフェイクニュースの傾向変化への対応が難しくなる。
         先行研究によると学習・検証で入力するニュースの出来事を変えると検出性能が劣化する\cite{Wang:2018:EEA:3219819.3219903}。
-        よって\underline{継続しデータセットを拡大する仕組みが必要}である。
+        よって\underline{継続してデータセットを拡大する仕組みが必要}である。
     \item[SNSプラットフォームへの依存性] %\mbox{}\\
         SNS上で利用者からの反応を取得する場合、その形式は取得元のSNSプラットフォームに依存する。
-        今後主流となるSNSが変わった場合、利用者層や時代の違いによって既存のデータでは対応できない可能性がある。
+        今後主流なSNSが変わると、利用者層や時代の違いによって\underline{既存のデータでは対応できない}。
     \item[早期検出と正確性の両立] %\mbox{}\\
         記事内容に加えて利用者の反応(RT, コメント等)を扱うと検出性能が改善する\cite{Wu:2018:TFF:3159652.3159677}一方、
         利用者の反応を十分に得るには時間がかかり、\underline{高い正確性と早期検出を両立できない}。
     \item[日本語データセット不足] %\mbox{}\\
-        深層学習による実現は、正解ラベルとして多量のファクトチェック結果を要する。
+        深層学習による検出は、正解ラベルとして多量のファクトチェック結果を要する。
         このファクトチェックが活発な地域差の影響でデータセットが\textbf{英語に集中}\cite{fakenewsnet}している。
         もし\textbf{日本語を対象}とした場合、ラベル不足の影響により\underline{教師あり学習ができない}。
     \end{description}
@@ -59,7 +59,7 @@ SNSの発展で情報を迅速かつ大量に取得・共有が容易になっ�
 %begin 着想に至った経緯 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 \graysubsection{本研究計画の着想に至った経緯}
 私は修士課程で\underline{英文フェイクニュース早期検出の研究を行った}。
-記事に対する利用者のコメントが検出に有用とする先行研究をベースに、
+記事に対する利用者のコメントが検出に有用とする先行研究\cite{defend}をベースに、
 早期検出を想定して\underline{少ないコメントから更にコメント内容を自動生成}して検出するモデルを実装した。
 実験にてコメントを生成した上で分類することでより多くのフェイクニュース検出を実現した(査読付き海外IEEE学会 発表済\cite{ines})。
 
@@ -80,9 +80,10 @@ SNSの発展で情報を迅速かつ大量に取得・共有が容易になっ�
     \bibitem{iraninfo} H. H-M, \textit{et al.} \textit{Critical Care} 24.1 2020: 1-3.
     \bibitem{snsinfo} S. Tasnim, \textit{et al.} \textit{JPMPH} 53.3 2020: 171-174.
     \bibitem{Wang:2018:EEA:3219819.3219903} Y. Wang, \textit{et al.} \textit{KDD'18}, pp. 849-857. 2018.
-    \bibitem{Wu:2018:TFF:3159652.3159677} L. Wu \& H. Liu. \textit{WSDM '18},  pp. 637-645, 2018.
+    \bibitem{Wu:2018:TFF:3159652.3159677} L. Wu \& H. Liu. \textit{WSDM '18}  pp. 637-645, 2018.
     \bibitem{fakenewsnet} K. Shu,\textit{et al.} \textit{Big Data 8.3} 2020: 171-188.
     \bibitem{coviddiff} Y. Bang, \textit{et al.} \textit{arXiv preprint arXiv:2101.03841} 2021.
+    \bibitem{defend} K. Shu, \textit{et al.} \textit{KDD'19} 395–405, 2019.
     \bibitem{ines} Y. Yuta, \textit{et al.} \textit{INES}. 2020.
     \bibitem{mwss} K. Shu, \textit{et al.}  \textit{arXiv preprint arXiv:2004.01732} 2020.
 \end{twobibliography}
