@@ -11,7 +11,7 @@
 \graybf{(1) 研究に関する自身の強み}
 
 \sbsbsection{主体性}
-私は高校3年次にバイオインフォマティクス(生命情報学)分野の研究活動として初めてプログラミングを行いWebクローラーを開発した(成果4)。
+私は高校3年次にバイオインフォマティクス(生命情報学)分野の研究活動として初めてプログラミングを行いWebクローラーを開発した(成果\ref{enum:hg})。
 その後大学でコンピュータサイエンスの経験を積む中で、
 %熊本地震や米国大統領選挙でフェイクニュース問題が多く取り沙汰されるようになった。
 %誤った情報が広まって風評被害が出る事例は古今東西起きているものの、
@@ -21,28 +21,28 @@
 指導教員を始め多くの研究者から助言を受けつつ\underline{主体的に研究を進めてきた}。
 英文記事が対象のため、
 \underline{積極的に海外学会を中心に成果を発表し}、\underline{研究内容や今後の発展について議論}を交わした。
-\underline{既に1回査読付き海外IEEE学会で口頭発表}し(成果1)、
-\underline{国内研究会でも2回口頭発表}を行った(成果2, 3)。
+\underline{既に1回査読付き海外IEEE学会で口頭発表}し(成果\ref{enum:ines})、
+\underline{国内研究会でも3回口頭発表}を行った(成果\ref{enum:MACC}〜\ref{enum:NLC})。
 
 \sbsbsection{状況把握能力}
-私が学部〜修士で行ってきた研究(成果1〜3)は、
+私が学部〜修士で行ってきたテーマ(成果\ref{enum:ines}〜\ref{enum:NLC})は、
 特に海外で盛んに行われている研究である。
 このため積極的に英語論文の調査を行い、
 その研究内容を研究室内部のみならずときに他大学の学生へ共有することで、
 フェイクニュースの自動検出を行う研究における現在の状況を仔細に把握できるようになった。
-実際に学部論文(内容は成果2に近い)で引用した文献26件のうち24件が英語論文や記事であり、
-修士論文(内容は成果3に近い)で引用した文献76件のうち74件が英語論文や記事であった。
+実際に学部論文(内容は成果\ref{enum:MACC}に近い)で引用した文献26件のうち24件が英語論文や記事であり、
+修士論文(内容は成果\ref{enum:NLC}に近い)で引用した文献76件のうち74件が英語論文や記事であった。
 このように私は\underline{貪欲な海外論文調査に裏打ちされた状況把握能力}があると考える。
 
 \sbsbsection{実装能力}
 私は\underline{産学問わず}プログラミング活動を行ってきた。
-最初のプログラミング開発(成果1)では、実装に適した言語の選定から、独習〜実装、
+最初のプログラミング開発(成果\ref{enum:hg})では、実装に適した言語の選定から、独習〜実装、
 そしてポスター作成まで一貫して大学合格発表直後から発表会までの2週間で独力で行った。
 このプログラミング能力は大学入学直後も発揮し続け、
-産業界ではこれまで2社で3ヶ月以上継続したエンジニア活動を行っている(成果6, 7)ほか、
-1〜2ヶ月に及ぶ短期エンジニアインターンシップも2社で行った(成果8, 9)。
-一方学部研究(成果2)では3カテゴリ分類モデルの実装を独力で行った。
-また修士研究(成果1, 3)では、
+産業界ではこれまで2社で3ヶ月以上継続したエンジニア活動を行っている(成果\ref{enum:amelieff}, \ref{enum:jict})ほか、
+1〜2ヶ月に及ぶ短期エンジニアインターンシップも2社で行った(成果\ref{enum:fixstars}, \ref{enum:ak})。
+一方学部研究(成果\ref{enum:MACC})では3カテゴリ分類モデルの実装を独力で行った。
+また修士研究(成果\ref{enum:ines}, \ref{enum:SMASH}, \ref{enum:NLC})では、
 既存のフェイクニュース生成モデルGrover\cite{grover}のソースコードを改変する形で記事ではなくコメントを生成するシステムを構築した。
 よって私には豊富な開発経験がもたらす実装能力があると確信する。
 
@@ -51,8 +51,8 @@
 研究者達とのコミュニケーションを積極的に行った。
 また他大学との合同ゼミにも参加し、別分野の研究に対する理解を深めている。
 
-私は大学入りしてから小中高校生を対象としたプログラミング教室の立ち上げから関与を続け、
-講師としても2年半かけて活動を続けた(成果5)。
+私は大学入りしてから\underline{小中高校生を対象としたプログラミング教室の立ち上げから関与を続け}、
+講師としても2年半かけて活動を続けた(成果\ref{enum:prog})。
 具体的には教える言語(Python)の習得を目的とした輪講に参加し、
 講師として開講から2年間にわたり毎週受講生の学習のメンタリングを行った。
 受講生が分からないと申告した部分は実際にその部分が不明なのか、それとも前提とする部分から既に不明なのか、
@@ -73,47 +73,50 @@
     \item \underline{$\circ$ Yuta Yanagi}, Ryouhei Orihara, Yuichi Sei, Yasuyuki Tahara, and Akihiko Ohsuga.\\
     ``Fake news detection with generated comments for news articles''.\\
     The 24th IEEE International Conference on Intelligent Engineering Systems 2020,\\
-    (Reykjavík, Iceland) Virtual event due to COVID-19, July 2020.
+    (Reykjavík, Iceland) Virtual event due to COVID-19, July 2020. \label{enum:ines}
 \end{enumerate}
 
 \sbsbsection{成果: 国内学会やシンポジウムにおける発表}
-(以下2件　査読なし・口頭発表)
+(以下3件　査読なし・口頭発表)
 \vspace{-3mm}
 \begin{enumerate}
     \setcounter{enumi}{1}
     \setlength{\parskip}{0cm}
     \setlength{\itemsep}{0cm}
-    \item \underline{$\circ$ 栁裕太}、田原康之、大須賀昭彦、清雄一\\
+    \item \underline{$\circ$ 栁裕太}、田原康之、清雄一、大須賀昭彦\\
         「画像付きフェイクニュースとジョークニュースの検出・分類に向けた機械学習モデルの検討」、\\
         日本ソフトウェア科学会 2018年度 MACC研究発表会、
-        大分、2019年3月
+        大分、2019年3月 \label{enum:MACC}
+    \item \underline{$\circ$ 栁裕太}、折原良平、清雄一、田原康之、大須賀昭彦\\
+        「記事へのコメント生成によるフェイクニュースの早期検出」\\
+        Symposium on Multi Agent Systems for Harmonization 2020 (SMASH20), Online, 2020年8月 \label{enum:SMASH}
     \item \underline{$\circ$ 栁裕太}、折原良平、清雄一、田原康之、大須賀昭彦\\
         「フェイクニュースの早期自動検出に向けたニュース記事コメント生成モデルの提案」、\\
-        言語理解とコミュニケーション研究会（NLC） 第17回テキストアナリティクス・シンポジウム、\\
-        オンライン、2021年2月
+        言語理解とコミュニケーション研究会(NLC) 第17回テキストアナリティクス・シンポジウム、\\
+        Online, 2021年2月 \label{enum:NLC}
 \end{enumerate}
 (以下1件　査読なし・ポスター発表)
-\vspace{-4mm}
+\vspace{-3mm}
 \begin{enumerate}
-    \setcounter{enumi}{3}
+    \setcounter{enumi}{4}
     \setlength{\parskip}{0cm}
     \setlength{\itemsep}{0cm}
     \item \underline{$\circ$ 栁裕太}、葛西透麿、 森谷薫平、神谷岳洋、藤原徹、木村健太、榎本裕介\\
         「CaD428の変異遺伝子の機能解析ツールの汎用化」、\\
         広尾学園高校医進・サイエンスコース研究成果報告会、
-        東京、2015年3月
+        東京、2015年3月 \label{enum:hg}
 \end{enumerate}
 
 \sbsbsection{成果: 学外活動歴}
 \begin{enumerate}
-    \setcounter{enumi}{4}
+    \setcounter{enumi}{5}
     \setlength{\parskip}{0cm}
     \setlength{\itemsep}{0cm}
-    \item UECプログラミング教室講師、2016年5月〜2018年3月\cite{uecprog}
-    \item アメリエフ株式会社におけるエンジニア活動、2016年8月〜2018年3月\cite{amelieff}
-    \item 株式会社justInCase Technologiesにおけるエンジニア活動、2018年10月〜活動中\cite{jic-tech}
-    \item 株式会社フィックスターズにおける短期エンジニアインターンシップ活動、2019年7〜8月
-    \item 株式会社アカツキにおける短期バックエンドエンジニアインターンシップ活動、2020年7月
+    \item UECプログラミング教室講師、2016年5月〜2018年3月\cite{uecprog} \label{enum:prog}
+    \item アメリエフ株式会社におけるエンジニア活動、2016年8月〜2018年3月\cite{amelieff} \label{enum:amelieff}
+    \item 株式会社justInCase Technologiesにおけるエンジニア活動、2018年10月〜活動中\cite{jic-tech} \label{enum:jict}
+    \item 株式会社フィックスターズにおける短期エンジニアインターンシップ活動、2019年7〜8月 \label{enum:fixstars}
+    \item 株式会社アカツキにおける短期バックエンドエンジニアインターンシップ活動、2020年7月 \label{enum:ak}
 \end{enumerate}
 
 \vspace{5mm}
